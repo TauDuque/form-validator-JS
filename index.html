@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar Formulário</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Assine agora!</h1>
+      <!-- Formulário -->
+      <form id="form">
+        <!-- Nome Completo -->
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Nome Completo" />
+        </div>
+        <!-- Telefone -->
+        <div class="form-group">
+          <label for="fone">Telefone de Contato</label>
+          <input type="tel" id="fone" placeholder="011-14-06" />
+        </div>
+        <!-- email -->
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="email@adress.com" />
+        </div>
+        <!-- URL -->
+        <div class="form-group">
+          <label for="website">URL</label>
+          <input type="url" id="website" placeholder="website" />
+        </div>
+        <!-- senha -->
+        <div class="form-group">
+          <label for="password1">Senha</label>
+          <input type="password" id="password1" placeholder="Criar senha" />
+        </div>
+        <!-- Confirmar senha -->
+        <div class="form-group">
+          <label for="password2">Confirmar senha</label>
+          <input type="password" id="password2" placeholder="Confirmar senha" />
+        </div>
+        <button type="submit">Registrar</button>
+      </form>
+      <!-- erro ou acesso -->
+      <div class="message-container">
+        <h3 id="message">Não pense, clique!!</h3>
+      </div>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
